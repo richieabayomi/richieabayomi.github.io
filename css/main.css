@@ -1,0 +1,351 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.main-page{
+    background-image: url('../assets/HomePage/Hero_Mobile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    margin-top: 20px;
+    margin-left:15px;
+    height:100%;
+}
+
+header .nav-btn{
+    margin-top: 20px;
+    margin-right:15px
+}
+.main-page .main-body .main-content{
+    margin-top: 100px;
+    margin-left: 15px;
+}
+.nav-btn{
+    border: 1px solid darkblue;
+    cursor: pointer;
+    height :20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    border-radius: 15%;
+    
+}
+
+.btn{
+    width: 10px;
+    background-color:darkblue;
+    margin: 1px;
+    padding:1px;
+    border-radius: 5%;
+}
+
+
+.main-page nav{
+    position: fixed;
+    height:100vh;
+    width: 0;
+    background-color: white;
+    color: black;
+    line-height: 3rem;
+    z-index:1000 ;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+.main-page .activenav{
+    width: 100vw;
+}
+
+.main-page nav .nav-items{
+    position: absolute;
+    top:65px;
+    left: 30px;
+}
+
+.main-page nav .nav-items .nav-item{
+    font-weight: bold;
+}
+
+.main-page nav .nav-items .nav-item:hover{
+    color: darkorange;
+}
+
+.main-page nav .nav-close{
+    display: flex;
+    position: absolute;
+    top:25px;
+    right:15px;
+    justify-content: center;
+    align-items: center;
+    background-color: skyblue;
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+    border-radius: 5px;
+}
+
+.main-page .main-body{
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 64px);
+}
+
+.main-page .main-body button{
+    border: none;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: darkorange;
+    color: white;
+    margin-top: 30px;
+    font-size: 1rem;
+}
+
+.about-us{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+}
+
+
+
+.about-us .right img{
+    width: 100%;
+}
+
+
+.about-us .left .about-us-header{
+    color: darkorange;
+}
+
+.about-us .left h2{
+    margin: 10px 0;
+
+}
+
+.about-us .left p{
+    color: gray;
+}
+
+.about-us .left .about-button{
+    border: none;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: darkorange;
+    color: white;
+    margin-top: 30px;
+    font-size: 1rem;
+}
+
+footer .top{
+    background-color: #0f2539;
+    color: white;
+    height: 80%;
+}
+
+footer .bottom{
+    background-color: #112c46;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20%;
+}
+
+
+
+
+
+@media screen and (max-width:768px) {
+
+    .about-us .left{
+        margin-top: 100px;
+    }
+
+    .about-us .right{
+        margin-top: 100px;
+    }
+
+
+    .about-us .right .big{
+        display: none;
+    }
+
+    .about-us .left{
+        width: 80%;
+        margin-top: 30%;
+        margin-left: 10%;
+    }
+    
+    .about-us .right{
+        width: 90%;
+        margin-top: 10%;
+        margin-left: 10%;
+
+
+    }
+    footer{
+        height: 130vh;
+        background-color: #0f2539;
+    }
+    footer .top{
+        height: 85%;
+        width: 90%;
+        margin: auto;
+    }
+    footer .top img{
+        margin-top: 20%;
+    }
+
+    footer .bottom{
+        height: 15%;
+    }
+    footer .top .footer-left{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer .bottom .credits{
+        display: none;
+    }
+}
+
+
+
+@media screen and (min-width:992px) {
+
+    .main-page{
+        background-image: url('../assets/HomePage/HERO.png');
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    header .logo{
+        margin-top: 0;
+        margin-left: 80px;
+        height:100%;
+    }
+
+
+    .main-page header nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: rgba(0, 0, 0, 0);
+        position: relative;
+        right: 0;
+        height:100px;
+        width:50%;
+        color: white;     
+    }
+
+    .main-page nav .nav-items{
+        position: relative;
+        display: flex;
+        top:0;
+        right:0;
+        flex-direction: row;
+    }
+
+    .main-page nav .nav-items .nav-item{
+        font-weight: normal;
+        cursor: pointer;
+        margin-right: 35px;
+    }
+    
+
+    .main-page nav .nav-close{
+        display: none;
+    }
+
+    .nav-btn{
+        display: none;
+    }
+
+    .main-page .main-body{
+        display: flex;
+        flex-direction: column;
+        height: calc(100vh - 64px);
+    }
+
+    .main-page .main-body .main-content{
+        margin-top: 120px;
+        margin-left: 80px;
+
+    }
+
+    /* about us page */
+    .about-us{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 100vh;
+    }
+
+    .about-us .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .about-us .right{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        height: 100%;
+    }
+
+    .about-us .right .big{
+        display: block;
+        height: 80%;
+    }
+
+
+    .about-us .right .small{
+        display: none;
+    }
+
+    footer{
+        height: 60vh;
+    }
+    footer .top{
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    footer .top img{
+        height: 50%;
+    }
+
+    footer .top .footer-left{
+        display: flex;
+        justify-content: space-around;
+        width: 30%;
+    }
+
+    footer .top .footer-right{
+        margin-right: 10%;
+    }
+}
