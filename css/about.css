@@ -1,0 +1,382 @@
+.main-page{
+    background-image: url('../assets/About/Hero_Web.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+}
+.about{
+    height: 200vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+.about .about-contain{
+    height: 90%;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+.mobile-img{
+    display:none;
+}
+
+.about .about-contain .about-header h2{
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.about .about-contain .about-header-right{
+    display: none;
+}
+
+.about .about-contain .about-left{
+ width: 40%;
+ margin: auto;
+ margin-right: 0;
+}
+
+.about .about-contain .about-left img{
+    width: 90%;
+    margin-bottom: 50px;
+    
+}
+
+.about .about-contain .about-left p{
+    color: gray;
+    
+}
+
+.about .about-contain .about-right{
+    width: 40%;
+   
+    margin: auto;
+    margin-left: 0;
+}
+
+.about .about-contain .about-right img{
+    width:95%;
+    
+}
+
+.about .about-contain .about-right .right-text{
+    width: 80%;
+    text-align: left;
+    margin: auto;
+    margin-bottom: 50px;
+    
+}
+.about .about-contain .about-right p{
+    color: gray;
+    
+}
+
+/* mission */
+.mission{
+height: 80vh;
+background-color:#F6F5FA;
+display: flex;
+align-items: flex-end;
+
+}
+
+.mission-container{
+    width: 90%;
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.mission-container p{
+    color: gray;
+}
+.mission-container .mission-left{
+    
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mission-container .mission-left img{
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+
+
+}
+
+.mission-container .mission-right{
+    
+    width: 40%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.missions{
+    
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    height: 90%;
+}
+
+.missions h2{
+    margin-bottom: 0;
+}
+
+.missions p{
+    margin-bottom: 0;
+    line-height: 1.5rem;
+}
+/* end of mission */
+
+
+/* partners */
+.partners{
+
+width:100%
+}
+
+.partner-head{
+    width: 90%;
+    
+    margin: auto;
+}
+.partner-header span{
+    color: darkorange;
+    margin-bottom: 0;
+}
+
+.partners-container{
+    display: flex;
+    
+    margin: auto;
+    height: 90%;
+    width: 90%;
+}
+.partner-header-container{
+    
+    width: 95%;
+    height: 20%;
+    margin: 20px auto;
+}
+
+.partner-header-container h2{
+    margin-top: 0;
+}
+/* end of partners */
+
+
+/* footer */
+
+footer{
+    height: 60vh;
+}
+footer .top-container{
+    
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-color: #0f2539;
+}
+
+footer .top{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    
+}
+
+
+footer .top img{
+    height: 50%;
+}
+
+footer .top .footer-left{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+footer .top .footer-right{
+    margin-right: 10%;
+}
+
+footer .top .social-media-footer{
+    display: none;
+}
+/* end of footer */
+@media screen and (max-width:768px) {
+    .main-page{
+        background-image: url('../assets/About/Hero_Mobile.png');
+    }
+
+    .about .about-contain{
+        height: 90%;
+        width: 90%;
+        display: flex;
+        justify-content: left;
+        flex-direction: column-reverse;
+    }
+    .desktop-img{
+        display: none;
+    }
+
+    .mobile-img{
+        display:block;
+    }
+    .about{
+        overflow: hidden;
+        height: 320vh;
+    } 
+    .about .about-contain .about-left{
+        width: 90%;
+        margin-left: 0;
+        margin: auto;
+        
+       }
+
+       .about .about-contain .about-left .advert h2{
+        margin-bottom: 0;
+        
+       }
+
+       .about .about-contain .about-left .advert p{
+        
+       }
+
+       .about .about-contain .about-right{
+        width: 90%;
+        margin: auto;
+       }
+
+       .about .about-contain .about-right .right-text{
+        width: 100%;
+        margin: auto;
+        
+       }
+
+       .about .about-contain .about-header{
+        display: none;
+        }
+        .about .about-contain .about-header-right{
+            display: none;
+        }
+        .about .about-contain .about-header-right{
+            display: block;
+        }
+        /* mission */
+        .mission{
+        
+            height: 100vh;
+        }
+        .mission .mission-container{
+            width: 90%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+        }
+        .mission-container .mission-left{
+            
+            display: none;
+        }
+
+        .mission-container .mission-right{
+            width: 90%;
+            margin: auto;
+        }
+
+        /* partners */
+        .partners{
+            width: 100%;
+            height: 40vh;
+            display: flex;
+            justify-content: left;
+        }
+
+        .partners .partners-container{
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+
+            margin:  auto;
+
+        }
+        .partner-head{
+            margin: 0;
+        }
+
+        .partners .partners-container .partner-header-container{
+            width: 90%;
+            height: 90%;
+            margin:  auto;
+        }
+        /* footer */
+        footer{
+            height: 750px;
+            background-color: #0f2539;
+            
+        }
+    
+        footer .top-container{
+            
+            height: 85%;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+    
+        }
+        footer .top{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: left;
+            padding: 0;
+            height: 90%;
+            width: 90%;
+    
+        }
+        footer .bottom{
+            height: 15%;
+        }
+        footer .top .footer-left{
+            display: flex;
+            justify-content: left;
+            width: 100%;
+        }
+    
+        footer .top .footer-left .quick-links{
+            margin-right: 15%;
+        }
+    
+        footer .top .footer-right{
+            display: flex;
+            justify-content: left;
+            flex-direction: column;
+            width: 90%;
+        }
+    
+    
+        footer .bottom .credits{
+            display: none;
+        }
+    
+        footer .bottom .social-media{
+            display: none;
+        }
+        /* end of footer */
+            
+}
